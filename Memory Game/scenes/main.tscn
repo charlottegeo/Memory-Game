@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://8qpdf350vxev"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_gla0s"]
+[ext_resource type="Texture2D" uid="uid://c762fyqsd1i05" path="res://assets/White_Circle.svg.png" id="2_crjwk"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_gla0s")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 2560.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 78.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.00784314, 0.129412, 1)
+
+[node name="ScoreLbl" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.653704
+anchor_top = 0.0175781
+anchor_right = 0.982407
+anchor_bottom = 0.0683594
+offset_right = -284.0
+offset_bottom = -104.0
+grow_horizontal = 0
+scale = Vector2(5, 5)
+text = "Score: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="RedLight" type="TextureRect" parent="."]
+modulate = Color(0.301961, 0, 0, 1)
+offset_left = 116.0
+offset_top = 203.0
+offset_right = 756.0
+offset_bottom = 843.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_crjwk")
+
+[node name="BlueLight" type="TextureRect" parent="."]
+modulate = Color(0.0313726, 0, 0.301961, 1)
+offset_left = 330.0
+offset_top = 403.0
+offset_right = 970.0
+offset_bottom = 1043.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_crjwk")
+
+[node name="GreenLight" type="TextureRect" parent="."]
+modulate = Color(0.0588235, 0.301961, 0, 1)
+offset_left = 593.0
+offset_top = 403.0
+offset_right = 1233.0
+offset_bottom = 1043.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_crjwk")
+
+[node name="WhiteLight" type="TextureRect" parent="."]
+modulate = Color(0.301961, 0.301961, 0.301961, 1)
+offset_left = 815.0
+offset_top = 203.0
+offset_right = 1455.0
+offset_bottom = 843.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_crjwk")
